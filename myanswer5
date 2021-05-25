@@ -1,0 +1,21 @@
+#! /usr/bin/env python3
+
+def indexof(x,a)
+     for i in a:
+         if (i==x)
+            return True
+     return False
+
+
+def main():
+    for i in range(int(input())):
+        a = []
+        length = int(input())
+        c = 0
+        b = list(map(int,input().split()))
+        for x in range(length-1):
+            if (indexof(b[x]*b[x+1],b)): c +=1
+        if (length==1): print("yes")
+        elif (c > 0): print("yes")
+        else : print("no")
+main()
